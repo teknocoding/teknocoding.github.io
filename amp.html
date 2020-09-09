@@ -1,0 +1,20 @@
+<script type="text/javascript">
+
+
+ var tambah = document.getElementById("tambah");
+       var nama = "Comfotable Sofa";
+       var harga = "1052000";
+       var gambar = "https://1.bp.blogspot.com/-PvX1aUHj3kA/XyGa6BUZyCI/AAAAAAAAMQs/rlRlj57EF08fWzhLezbSou02eP2OOMEFgCK4BGAYYCw/s1600/ci9-300x300.png";
+       tambah.onclick = function(){          
+       document.cookie = nama + "<br>" + gambar + "<br>" + harga;
+       }
+
+       var get = document.getElementById("get");
+       get.onclick = function(){
+        var decodedCookie = decodeURIComponent(document.cookie = nama);
+        document.getElementById("hasil").innerHTML = decodedCookie;
+       }
+
+
+
+</script> 
